@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit - Developer Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #001121;
+            color: white;
+        }
+
+        .navbar {
+            background-color: #12123E;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: #735FB1 !important;
+            transform: scale(1.05);
+        }
+
+        
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: #735FB1;
+        }
+
+        .about-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .about-buttons a {
+            margin-right: 10px;
+        }
+
+        .card {
+            background-color: #12123E;
+            border: none;
+        }
+
+        .card h5 {
+            color: #735FB1;
+        }
+
+        .btn-custom {
+            background-color: #735FB1;
+            color: white;
+            border-radius: 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #12123E;
+            color: white;
+            margin-top: 50px;
+        }
+
+        .contact-icons a {
+            color: white !important;
+            font-size: 1.5rem;
+            margin-right: 15px;
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .contact-icons a:hover {
+            transform: scale(1.2);
+            color: #735FB1 !important;
+        }
+        .navbar-brand img {
+            height: auto;
+            width: 80px; /* Adjust height */
+            max-width: 200%; /* Ensure responsiveness */
+        }
+       
+        .animated-text .text-1 {
+            animation-delay: 1s; /* First sentence appears immediately */
+        }
+    
+        .animated-text .text-2 {
+            animation-delay: 4s; /* Second sentence appears after the first fades out */
+        }
+        .hero-section {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(to bottom, #001121, #12123E);
+            color: white;
+        }
+    
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #735FB1;
+            margin-bottom: 10px; /* Add spacing below the heading */
+        }
+    
+        .animated-text {
+            font-size: 1.5rem;
+            height: 30px; /* Fixed height to prevent layout shifting */
+            position: relative;
+            margin-top: 10px;
+            text-align: center; /* Ensure text is centered */
+        }
+        
+        .animated-text span {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%); /* Center the text horizontally */
+            opacity: 0;
+            width: 100%;
+            animation: fadeAnimation 6s infinite; /* Increased duration for smoother transitions */
+        }
+    
+        @keyframes fadeAnimation {
+            0%, 45%, 100% {
+                opacity: 0; /* Invisible */
+            }
+            5%, 40% {
+                opacity: 1; /* Fully visible */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <!-- Replace Text with Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Harshit's Logo" style="height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work-experience">Work Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Hi! I'm Harshit!</h1>
+        <div class="animated-text text-center">
+            <span class="text-1">I'm a Machine Learning Enthusiast.</span>
+            <span class="text-2">I'm a Python Developer.</span>
+        </div>
+    </section>
+
+    <section id="about" class="container my-5">
+        <h2 class="section-title text-center">About Me</h2>
+        <div class="row align-items-center mt-4">
+            <!-- Profile Picture -->
+            <div class="col-md-4 text-center">
+                <img src="bg.png" alt="Harshit Saxena" class="img-fluid rounded-circle shadow" style="max-width: 200px;">
+            </div>
+    
+            <!-- About Text -->
+            <div class="col-md-8">
+                <p class="text-center text-md-start">
+                    Hi, I’m Harshit, a goal-oriented Computer Science Engineering student passionate about AI, Machine Learning, and building impactful solutions. I thrive on solving complex problems and creating innovative projects that make a difference.
+                </p>
+                <!-- Buttons -->
+                <div class="text-center text-md-start mt-3">
+                    <a href="https://drive.google.com/file/d/1nxHDvwx86WgdKFy-pAUxBKnkD7devs3m/view?usp=sharing" target="_blank" class="btn btn-custom me-2">View Resume</a>
+                    <a href="https://github.com/HARSHIT-SAXENA3007" target="_blank" class="btn btn-outline-light">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Work Experience Section -->
+    <section id="work-experience" class="container my-5">
+        <h2 class="section-title">Work Experience</h2>
+
+        <!-- DRDO Internship -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5>Research Intern (Dec 2024 - Jan 2025)</h5>
+                <p><strong>Defence Research and Development Organization</strong>, New Delhi, India</p>
+                <ul>
+                    <li>Conducted advanced research at the Scientific Analysis Group (SAG), focusing on adversarial attack strategies.</li>
+                    <li>Enhanced PyTorch-based AdvGAN frameworks to improve model resilience.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Infosys Internship -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5>AI Project Intern (Dec 2024 - Feb 2025)</h5>
+                <p><strong>Infosys Springboard</strong>, Remote</p>
+                <ul>
+                    <li>Boosted lead conversion rates from 30% to 80% by designing an AI-driven B2B Lead Scoring System.</li>
+                    <li>Implemented predictive scoring models for targeted outreach.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Blind Relief Association -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5>Intern (Jun 2024 - Jul 2024)</h5>
+                <p><strong>The Blind Relief Association</strong>, New Delhi, India</p>
+                <ul>
+                    <li>Designed an accessible voice-automated billing system for visually impaired workers.</li>
+                    <li>Integrated NVDA screen reader compatibility for inclusivity.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+       <!-- Other experiences remain unchanged -->
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container my-5">
+      <h2 class="section-title">Projects</h2>
+
+      <!-- Electricity Demand Projection Model -->
+      <div class="card mb-4">
+          <div class="card-body">
+              <h5>Electricity Demand Projection Model</h5>
+              <p>An LSTM-based time-series forecasting model to predict electricity demand accurately.</p>
+              <ul>
+                  <li>Built using Python, TensorFlow, and Keras with advanced techniques like dropout layers and MinMax scaling.</li>
+                  <li><a href="[Your_Project_Link]" target="_blank" style="color:#735FB1;">View Project on GitHub</a></li>
+              </ul>
+          </div>
+      </div>
+
+      <!-- Add more projects as necessary -->
+
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="container my-5 text-center">
+      <h2 class="section-title">Contact Me</h2>
+
+      <!-- Social Media Icons -->
+      <div class="contact-icons mt-4">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/harshit-saxena-562305294/" target="_blank"><i class='fab fa-linkedin'></i></a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/_harshit_3007/" target="_blank"><i class='fab fa-instagram'></i></a>
+
+          <!-- Email -->
+          <a href="mailto:harshitsaxena3007@gmail.com" target="_blank"><i class='fas fa-envelope'></i></a>
+
+          <!-- Add more icons as needed -->
+      </div>
+
+      </footer>
+
+      <!-- Bootstrap JS -->
+      <script src="[Bootstrap_CDN]"></script>
